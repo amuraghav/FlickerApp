@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0404E65522EBFB6800A35DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E65422EBFB6800A35DC1 /* AppDelegate.swift */; };
-		0404E65722EBFB6800A35DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E65622EBFB6800A35DC1 /* ViewController.swift */; };
-		0404E65A22EBFB6800A35DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404E65822EBFB6800A35DC1 /* Main.storyboard */; };
 		0404E65C22EBFB6B00A35DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404E65B22EBFB6B00A35DC1 /* Assets.xcassets */; };
 		0404E65F22EBFB6B00A35DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404E65D22EBFB6B00A35DC1 /* LaunchScreen.storyboard */; };
+		0404E66922EBFF8900A35DC1 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E66822EBFF8900A35DC1 /* ServiceManager.swift */; };
+		0404E66C22EC0A4C00A35DC1 /* FlickerPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E66B22EC0A4C00A35DC1 /* FlickerPhotoModel.swift */; };
+		0404E66E22ECC7B700A35DC1 /* FlickerSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404E66D22ECC7B700A35DC1 /* FlickerSearch.storyboard */; };
+		0404E67022ECC89800A35DC1 /* FlickerSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E66F22ECC89800A35DC1 /* FlickerSearchView.swift */; };
+		0404E67322ECCCC400A35DC1 /* FlickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E67222ECCCC400A35DC1 /* FlickerCell.swift */; };
+		0404E67722ECCFFE00A35DC1 /* FlickerSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E67622ECCFFE00A35DC1 /* FlickerSearchViewModel.swift */; };
+		0404E67922ECE8F600A35DC1 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E67822ECE8F600A35DC1 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0404E65122EBFB6800A35DC1 /* FlickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0404E65422EBFB6800A35DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0404E65622EBFB6800A35DC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0404E65922EBFB6800A35DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0404E65B22EBFB6B00A35DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0404E65E22EBFB6B00A35DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0404E66022EBFB6B00A35DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404E66822EBFF8900A35DC1 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		0404E66B22EC0A4C00A35DC1 /* FlickerPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotoModel.swift; sourceTree = "<group>"; };
+		0404E66D22ECC7B700A35DC1 /* FlickerSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlickerSearch.storyboard; sourceTree = "<group>"; };
+		0404E66F22ECC89800A35DC1 /* FlickerSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerSearchView.swift; sourceTree = "<group>"; };
+		0404E67222ECCCC400A35DC1 /* FlickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerCell.swift; sourceTree = "<group>"; };
+		0404E67622ECCFFE00A35DC1 /* FlickerSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerSearchViewModel.swift; sourceTree = "<group>"; };
+		0404E67822ECE8F600A35DC1 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,67 @@
 		0404E65322EBFB6800A35DC1 /* FlickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				0404E66A22EC093F00A35DC1 /* MVVM */,
+				0404E66622EBFEE600A35DC1 /* Common */,
 				0404E65422EBFB6800A35DC1 /* AppDelegate.swift */,
-				0404E65622EBFB6800A35DC1 /* ViewController.swift */,
-				0404E65822EBFB6800A35DC1 /* Main.storyboard */,
 				0404E65B22EBFB6B00A35DC1 /* Assets.xcassets */,
 				0404E65D22EBFB6B00A35DC1 /* LaunchScreen.storyboard */,
 				0404E66022EBFB6B00A35DC1 /* Info.plist */,
 			);
 			path = FlickerApp;
+			sourceTree = "<group>";
+		};
+		0404E66622EBFEE600A35DC1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0404E66722EBFEFA00A35DC1 /* ServiceManager */,
+				0404E67822ECE8F600A35DC1 /* Extentions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0404E66722EBFEFA00A35DC1 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				0404E66822EBFF8900A35DC1 /* ServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		0404E66A22EC093F00A35DC1 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				0404E67422ECCFBA00A35DC1 /* Model */,
+				0404E67122ECCC8200A35DC1 /* View */,
+				0404E67522ECCFC800A35DC1 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		0404E67122ECCC8200A35DC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0404E66D22ECC7B700A35DC1 /* FlickerSearch.storyboard */,
+				0404E66F22ECC89800A35DC1 /* FlickerSearchView.swift */,
+				0404E67222ECCCC400A35DC1 /* FlickerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0404E67422ECCFBA00A35DC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0404E66B22EC0A4C00A35DC1 /* FlickerPhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0404E67522ECCFC800A35DC1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0404E67622ECCFFE00A35DC1 /* FlickerSearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0404E65F22EBFB6B00A35DC1 /* LaunchScreen.storyboard in Resources */,
+				0404E66E22ECC7B700A35DC1 /* FlickerSearch.storyboard in Resources */,
 				0404E65C22EBFB6B00A35DC1 /* Assets.xcassets in Resources */,
-				0404E65A22EBFB6800A35DC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +198,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0404E65722EBFB6800A35DC1 /* ViewController.swift in Sources */,
+				0404E67722ECCFFE00A35DC1 /* FlickerSearchViewModel.swift in Sources */,
+				0404E67322ECCCC400A35DC1 /* FlickerCell.swift in Sources */,
+				0404E66C22EC0A4C00A35DC1 /* FlickerPhotoModel.swift in Sources */,
 				0404E65522EBFB6800A35DC1 /* AppDelegate.swift in Sources */,
+				0404E66922EBFF8900A35DC1 /* ServiceManager.swift in Sources */,
+				0404E67022ECC89800A35DC1 /* FlickerSearchView.swift in Sources */,
+				0404E67922ECE8F600A35DC1 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0404E65822EBFB6800A35DC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0404E65922EBFB6800A35DC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0404E65D22EBFB6B00A35DC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,18 +342,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9LJ2SPF7Z;
 				INFOPLIST_FILE = FlickerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.FlickerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wallet.prod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,18 +363,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9LJ2SPF7Z;
 				INFOPLIST_FILE = FlickerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.FlickerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wallet.prod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
