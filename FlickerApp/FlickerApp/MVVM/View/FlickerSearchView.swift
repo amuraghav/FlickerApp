@@ -47,7 +47,6 @@ class FlickerSearchView: UIViewController,UICollectionViewDataSource ,UISearchBa
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         dismissKeyboard()
         if !searchBar.text!.isEmpty {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = true
             
             self.activityIndicator.isHidden = false
             activityIndicator.startAnimating()
@@ -59,6 +58,7 @@ class FlickerSearchView: UIViewController,UICollectionViewDataSource ,UISearchBa
                 switch result {
                 case .success(let message):
                     print(message)
+                    
                     DispatchQueue.main.async {
                         self.collectionView.reloadData()
                     }
